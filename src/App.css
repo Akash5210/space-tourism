@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.homepage{
+}
+#home-img{
+  position: absolute;
+  z-index: -1;
+}
+.home-parent{ 
+  font-family: 'Bellefair', serif;
+  position: absolute;
+  margin: 13rem 7rem;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.child-space{
+  flex: 1;
+}
+.child-space h4{
+  color: #D0D6F9;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1.725px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.child-space h1{
+  font-weight:lighter;
+  font-size: 165px;
+}
+.child-space p{
+  margin-top: 15px;
+ font-size: 20px;
+ font-weight: lighter;
+ line-height: 1.5rem;
+}
+.child-explore{
+  flex: 1;
+  margin-top: 157px;
+  margin-left: 123px;
+  padding-left: 325px;
+
+}
+.child-explore .explore{
+  font-size: 25px;
+  border-radius: 100px;
+  padding: 85px 45px;
+  background-color: white;
+  color: rgb(124 106 106);
+}
+
+.navbar{
+  position: fixed;
+  background-color: grey;
+  width: 100%;
+  
 }
