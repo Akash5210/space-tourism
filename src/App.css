@@ -8,6 +8,48 @@
 }
 .homepage{
 }
+
+.navbar ul{
+  font-family: 'Bellefair', serif;
+  width: 45rem;
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  right: 0;
+  padding: 2rem 3rem 2rem 6rem;
+  background: rgba(32, 67, 119, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.navbar .icon-line{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+.navbar .icon-line img{
+  width: 40px;
+
+}
+.navbar .icon-line hr{
+  position: relative;
+  z-index: 2;
+  bottom: 1.5rem;
+  left: 6rem;
+  width: 530px;
+  font-weight: 100;
+  opacity: 0.1;
+}
+.navbar li{
+  display: inline-block;
+  margin-right: 35px;
+}
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
 #home-img{
   position: absolute;
   z-index: -1;
@@ -53,11 +95,4 @@
   padding: 85px 45px;
   background-color: white;
   color: rgb(124 106 106);
-}
-
-.navbar{
-  position: fixed;
-  background-color: grey;
-  width: 100%;
-  
 }
