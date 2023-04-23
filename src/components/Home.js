@@ -1,10 +1,10 @@
 import React from 'react';
-import homeImg from "../assets/home/background-home-desktop.jpg"
+// import homeImg from "./assets/home/background-home-desktop.jpg"
 
 export default function Home() {
   return (
     <div className='homepage'>
-        <img src={homeImg} id='home-img' alt='earth-backbround' width={"100%"} height={"100%"}/>
+        <img src="./assets/home/background-home-desktop.jpg" className='background-img' alt='earth-backbround' width={"100%"} height={"100%"}/>
         <div className='home-parent'>
             <div className='child-space'>
                 <h4>SO, YOU WANT TO TRAVEL TO</h4>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import starLogo from "../assets/shared/logo.svg"
+//import starLogo from "./assets/shared/logo.svg"
 
 export default function Nav() {
   return (
     <div className='navbar'>
         <div className='icon-line'>
-          <img src={starLogo} alt='star-logo' />
+          <img src="./assets/shared/logo.svg" alt='star-logo' />
           <hr />
         </div>
         <ul>
