@@ -4,7 +4,7 @@ import React from 'react';
 export default function Home() {
   return (
     <div className='homepage'>
-        <img src="./assets/home/background-home-desktop.jpg" className='background-img' alt='earth-backbround' width={"100%"} height={"100%"}/>
+        <img src="./assets/home/background-home-desktop.jpg" className='background-img' alt='earth-backbround' width={"100%"}/>
         <div className='home-parent'>
             <div className='child-space'>
                 <h4>SO, YOU WANT TO TRAVEL TO</h4>

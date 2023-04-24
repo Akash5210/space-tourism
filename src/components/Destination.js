@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 */
 //import starsImg from "./assets/destination/background-destination-desktop.jpg";
 //import marsImg from "../assets/destination/image-mars.png"; 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 export default function Destination(props) {
@@ -22,8 +22,8 @@ export default function Destination(props) {
   
   return (
     <div className='destination'>
-      <img src="./assets/destination/background-destination-desktop.jpg" className='background-img' alt='stars-backbround' width={"100%"} height={"100%"}/>
-      <h4 className='heading-info'>01 PICK YOUR DESTINATION</h4>
+      <img src="./assets/destination/background-destination-desktop.jpg" className='background-img' alt='stars-backbround' width={"100%"} />
+      <h4 className='heading-info'><span>01</span> PICK YOUR DESTINATION</h4>
       <div className='parent'>
         <div className='child1'>
           <img src={moonData.images.png} className='mars-img' width="320px" alt='mars'/>
@@ -56,9 +56,3 @@ export default function Destination(props) {
     </div>
   )
 }
-
-
-{/* <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-                  the tallest planetary mountain in our solar system. It’s two and a half times 
-                  the size of Everest!
-                </p> */}

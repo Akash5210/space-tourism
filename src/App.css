@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bellefair&display=swap'); */
 
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@
 }
 
 .navbar ul{
-  font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
   width: 45rem;
   position: absolute;
   z-index: 1;
@@ -48,7 +50,8 @@
 .navbar a , .destination .child2 a{
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 .navbar a:hover{
   border-bottom: 2px solid white;
@@ -71,6 +74,7 @@
 .child-space h4{
   color: #D0D6F9;
   font-style: normal;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 1.725px;
@@ -81,7 +85,8 @@
   font-size: 165px;
 }
 .child-space p{
-  margin-top: 15px;
+ margin-top: 15px;
+ font-family: 'Barlow', sans-serif;
  font-size: 20px;
  font-weight: lighter;
  line-height: 1.5rem;
@@ -103,9 +108,17 @@
 
 /*----------- destination page ----------------------- */
 h4.heading-info{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 3px;
   position: absolute;
   top: 10rem;
   left: 10rem;
+}
+h4.heading-info span{
+  color: rgb(107, 104, 104);
+  font-weight: 800;
 }
 .destination .parent{
   font-family: 'Bellefair', serif;
@@ -160,4 +173,56 @@ h4.heading-info{
 .parent-moon p.value2{
   font-size: 20px;
   margin-top: 8px;
+}
+
+/* ********** crew page ***************** */
+.crew .parent{
+  font-family: 'Bellefair', serif;
+  position: absolute;
+  margin: 14rem 0 0 10rem;
+  width: 70rem;
+  display: flex;
+}
+.crew .parent .child1{
+  flex: 4;
+  margin-top: 5rem;
+}
+.crew .parent .child2{
+  flex: 3;
+}
+h3.crew-role{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: #D0D6F9;
+}
+h2.crew-name{
+  margin-top: 0.9rem;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 200;
+}
+p.crew-bio{
+  line-height: 22px;
+  letter-spacing: 1px;
+  width: 360px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+ul.crewChange-icon li{
+  background-color: #414458;
+  display: inline-block;
+  margin-top: 4rem;
+  margin-right: 10px;
+  /* border: 1px solid white; */
+  border-radius: 70%;
+  width: 10px;
+  height: 10px;
+}
+ul.crewChange-icon li:hover{
+  cursor: pointer;
+  background-color: white;
+}
+img.crew-img{
+  padding-right: 50px;
 }
