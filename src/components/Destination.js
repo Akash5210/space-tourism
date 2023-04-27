@@ -12,12 +12,12 @@ export default function Destination(props) {
   const destData = props.data;
   const [moonData, setMoonData] = useState(destData[0]);
   
-  const handleMoonData =(moonName)=>{
-    setMoonData(destData[moonName]);
+  const handleMoonData =(item)=>{
+    setMoonData(item);
   }
 
   //storing the <li> of all the moons in a single array
-  const temp = [0,1,2,3].map((item,index) => <li key={index}><a href='#' onClick={()=>handleMoonData(item)}>{destData[item].name}</a></li>)
+  const temp = destData.map((item,index) => <li key={index}><a href='#' onClick={()=>handleMoonData(item)}>{item.name}</a></li>)
   
   
   return (
