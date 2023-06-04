@@ -4,7 +4,7 @@ In the project directory, you can run:
 
 ### `link for deployed app`
 
-https://Akash5210.github.io/space-tourism
+https://space-tourapp.netlify.app
 
 ### `npm start`
 
@@ -22,9 +22,9 @@ Created using HTML5, CSS3, Reactjs. Data are fetched from data.json file. Static
 
 ### `for reading the documentation for generating the application website link`
 
-https://create-react-app.dev/docs/deployment
+This app is hosted on netlify free hosting service
 
 
-### `for generating the build folder and deploying on github pages io. use the below command`
-
-npm run deploy
+### `for generating the build folder and deploying on netlify. use the below command`
+[npm run build]
+for updating the website on netlify,\ first generate new build folder and drag & drop it on netlify after logging
