@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, lazy} from 'react';
 
 export default function Technology(props) {
   const techData = props.data;
@@ -13,7 +13,8 @@ export default function Technology(props) {
   
   return (
     <div className='technology'>
-      <img src="./assets/technology/background-technology-desktop.jpg" className='background-img' alt='backbround-img' width={"100%"} />
+      <img src="./assets/technology/background-technology-desktop.jpg" 
+        className='background-img' loading={lazy} alt='backbround-img' width={"100%"} />
       <h4 className='heading-info'><span>03</span> SPACE LAUNCH 101</h4>
       <div className='parent'>
         <div className='child3'>
@@ -27,7 +28,7 @@ export default function Technology(props) {
           <p className='tech-description'>{technology.description}</p>
         </div>
         <div className='child2'> 
-          <img src={technology.images.portrait} className='tech-img'   alt='tech-img'/>
+          <img src={technology.images.portrait} className='tech-img' loading={lazy}  alt='tech-img'/>
         </div>
       </div>
     </div>

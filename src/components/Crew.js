@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, lazy} from 'react';
 
 
 export default function Crew(props) {
@@ -14,7 +14,8 @@ export default function Crew(props) {
   
   return (
     <div className='crew'>
-      <img src="./assets/crew/background-crew-desktop.jpg" className='background-img' alt='stars-backbround' width={"100%"} />
+      <img src="./assets/crew/background-crew-desktop.jpg" className='background-img'
+       loading={lazy} alt='stars-backbround' width={"100%"} />
       <h4 className='heading-info'><span>02</span> MEET YOUR CREW</h4>
       <div className='parent'>
         <div className='child1'>
@@ -27,7 +28,7 @@ export default function Crew(props) {
           </ul>
         </div>
         <div className='child2'> 
-          <img src={crew.images.png} className='crew-img' width="100%" alt='crew'/>
+          <img src={crew.images.png} className='crew-img' loading={lazy} width="100%" alt='crew'/>
         </div>
       </div>
     </div>

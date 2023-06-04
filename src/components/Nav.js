@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import { Link } from 'react-router-dom';
 //import starLogo from "./assets/shared/logo.svg"
 
@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <div className='navbar'>
         <div className='icon-line'>
-          <img src="./assets/shared/logo.svg" alt='star-logo' />
+          <img src="./assets/shared/logo.svg" loading={lazy} alt='star-logo' />
           <hr />
         </div>
         <ul>

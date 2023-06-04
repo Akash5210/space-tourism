@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, lazy } from 'react';
 
 /*here since i have added data from json file which means getting data dynamically so, i have to put all images folder
   inside public folder, so i can add img using src as string directly 
@@ -22,11 +22,12 @@ export default function Destination(props) {
   
   return (
     <div className='destination'>
-      <img src="./assets/destination/background-destination-desktop.jpg" className='background-img' alt='stars-backbround' width={"100%"} />
+      <img src="./assets/destination/background-destination-desktop.jpg" 
+        className='background-img' loading={lazy} alt='stars-backbround' width={"100%"} />
       <h4 className='heading-info'><span>01</span> PICK YOUR DESTINATION</h4>
       <div className='parent'>
         <div className='child1'>
-          <img src={moonData.images.png} className='mars-img' width="320px" alt='mars'/>
+          <img src={moonData.images.png} className='mars-img' loading={lazy} width="320px" alt='mars'/>
         </div>
         <div className='child2'> 
           <ul>
